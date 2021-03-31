@@ -27,7 +27,7 @@ export default function NavBar() {
                         </NavLink >
 
                     </nav >
-                    <div>
+                    <div className="inline-flex py-3 px-s my-6">
                         <SocialIcon url="https://twitter.com/JosephPanetta2" className="mr-4" target="blank" fgColor="#fff" style={{ height: 35, width: 35 }} />
                         <SocialIcon url="https://www.facebook.com/Jlpanetta1681/" className="mr-4" target="blank" fgColor="#fff" style={{ height: 35, width: 35 }} />
                         <SocialIcon url="https://github.com/jlpanetta1681" className="mr-4" target="blank" fgColor="#fff" style={{ height: 35, width: 35 }} />
