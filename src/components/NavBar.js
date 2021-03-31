@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from "react-router-dom"
-
+import { SocialIcon } from "react-social-icons"
 
 export default function NavBar() {
     return (
@@ -27,6 +27,12 @@ export default function NavBar() {
                         </NavLink >
 
                     </nav >
+                    <div>
+                        <SocialIcon url="https://twitter.com/JosephPanetta2" className="mr-4" target="blank" fgColor="#fff" style={{ height: 35, width: 35 }} />
+                        <SocialIcon url="https://www.facebook.com/Jlpanetta1681/" className="mr-4" target="blank" fgColor="#fff" style={{ height: 35, width: 35 }} />
+                        <SocialIcon url="https://github.com/jlpanetta1681" className="mr-4" target="blank" fgColor="#fff" style={{ height: 35, width: 35 }} />
+                        <SocialIcon url="https://linkedin.com/in/jlpanetta1681" className="mr-4" target="blank" fgColor="#fff" style={{ height: 35, width: 35 }} />
+                    </div>
                 </div >
             </header >
         </>
