@@ -9,8 +9,8 @@ import NavBar from "./components/NavBar"
 function App() {
   return (
     <BrowserRouter>
-      <NavBar />
       <Home />
+      <NavBar />
       <Switch>
         <Route components={Home} path='/' />
         <Route components={About} path='/about' />
