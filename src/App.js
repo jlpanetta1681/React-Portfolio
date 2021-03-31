@@ -10,6 +10,7 @@ function App() {
   return (
     <BrowserRouter>
       <NavBar />
+      <Home />
       <Switch>
         <Route components={Home} path='/' />
         <Route components={About} path='/about' />

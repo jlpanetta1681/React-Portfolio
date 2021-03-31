@@ -9,3 +9,13 @@ module.exports = {
   },
   plugins: [],
 }
+
+
+// module.exports = {
+//   variants: {
+//     extend: {
+//       // ...
+//       backgroundAttachment: ['hover', 'focus'],
+//     }
+//   }
+// }
