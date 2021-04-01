@@ -8,17 +8,19 @@ import NavBar from "./components/NavBar"
 
 function App() {
   return (
-    <BrowserRouter>
+    <>
+      <BrowserRouter>
+        <NavBar />
+        <Switch>
+          <Route components={Home} path='/' />
+          <Route components={About} path='/about' />
+          <Route components={SinglePost} path='/post/:slug' />
+          <Route components={Post} path='/post' />
+          <Route components={Project} path='/project' />
+        </Switch>
+      </BrowserRouter>
       <Home />
-      <NavBar />
-      <Switch>
-        <Route components={Home} path='/' />
-        <Route components={About} path='/about' />
-        <Route components={SinglePost} path='/post/:slug' />
-        <Route components={Post} path='/post' />
-        <Route components={Project} path='/project' />
-      </Switch>
-    </BrowserRouter>
+    </>
   )
 
 }
