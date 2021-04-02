@@ -6,11 +6,13 @@ import Post from "./components/Post.js"
 import Project from "./components/Project"
 import NavBar from "./components/NavBar"
 
+
 function App() {
   return (
     <>
       <BrowserRouter>
         <NavBar />
+        <Home />
         <Switch>
           <Route components={Home} path='/' />
           <Route components={About} path='/about' />
@@ -19,7 +21,7 @@ function App() {
           <Route components={Project} path='/project' />
         </Switch>
       </BrowserRouter>
-      <Home />
+
     </>
   )
 
