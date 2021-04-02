@@ -1,29 +1,20 @@
-import sanityClient from "../client.js";
 import React, { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
+import sanityClient from "../client.js";
 
 export default function Post() {
     const [postData, setPost] = useState(null);
 
     useEffect(() => {
         sanityClient
-            .fetch(
-                `*[_type == "post"]{
-                title,
-                slug,
-                mainImage{
-                    asset->{
-                    _id,
-                    url
-                },
-                alt
+            .fetch(`*[_type == "post"]{title,slug,mainImage{asset->{_id,url},alt
             }
-        }`
-            )
+        }`)
             .then((data) => setPost(data))
             .catch(console.error);
-
     }, []);
+
+
 
     return (
         <main className="bg-green-100 min-h-screen p-12">
@@ -51,6 +42,6 @@ export default function Post() {
                     ))}
                 </div>
             </section>
-        </main>
+        </main >
     )
 }

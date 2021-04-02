@@ -12,7 +12,7 @@ function App() {
     <>
       <BrowserRouter>
         <NavBar />
-        <Home />
+
         <Switch>
           <Route components={Home} path='/' />
           <Route components={About} path='/about' />
@@ -21,7 +21,8 @@ function App() {
           <Route components={Project} path='/project' />
         </Switch>
       </BrowserRouter>
-
+      <Home />
+      <Post />
     </>
   )
 
