@@ -1,7 +1,10 @@
-import React from 'react';
 import image from "../tech.jpg"
-export default function Home() {
+
+import React from 'react'
+
+function Home() {
     return (
+
         <main>
             <img
                 src={image} alt="Italy" className="absolute object-cover w-full h-full" />
@@ -12,7 +15,11 @@ export default function Home() {
 
             </section>
 
-        </main >
+        </main>
+
     )
 }
+
+export default Home
+
 
