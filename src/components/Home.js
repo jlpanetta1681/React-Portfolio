@@ -14,6 +14,10 @@ function Home() {
 
 
             </section>
+            <div className="relative flex justify-center">
+
+                <h2 className="text 6xl text-black-600 justify-center font-bold cursive">A little About Me </h2>
+            </div>
 
         </main>
 
